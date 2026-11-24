@@ -1,0 +1,19 @@
+- equation: HO2 <=> OH + O  # Reaction 5
+  type: Chebyshev
+  temperature-range: [290.0, 3000.0]
+  pressure-range: [9.869232667160128e-03 atm, 98.69232667160128 atm]
+  data:
+  - [8.2883, -1.1397, -0.12059, 0.016034]
+  - [1.9764, 1.0037, 7.2865e-03, -0.030432]
+  - [0.3177, 0.26889, 0.094806, -7.6385e-03]
+- equation: H + 2 O2 <=> HO2 + O2 # Reaction 6
+  rate-constant: {A: 2.08e+19, b: -1.24, Ea: 0.0}
+- equation: O + H2 <=> H + OH  # Reaction 7
+  type: Blowers-Masel
+  rate-constant: {A: 38700, b: 2.7, Ea0: 2.619184e4, w: 4.184e9}
+- equation: 2 OH (+ M) <=> H2O2 (+ M)  # Reaction 8
+  duplicate: true
+  type: falloff
+  low-P-rate-constant: {A: 2.3e+12, b: -0.9, Ea: -1700.0}
+  high-P-rate-constant: {A: 7.4e+10, b: -0.37, Ea: 0.0}
+  efficiencies: {AR: 0.7, H2: 2.0, H2O: 6.0}

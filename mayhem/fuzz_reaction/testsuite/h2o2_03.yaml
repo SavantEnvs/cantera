@@ -1,0 +1,10 @@
+- equation: 2 H + H2 <=> 2 H2  # Reaction 13
+  rate-constant: {A: 9.0e+16, b: -0.6, Ea: 0.0}
+- equation: 2 H + H2O <=> H2 + H2O  # Reaction 14
+  rate-constant: {A: 6.0e+19, b: -1.25, Ea: 0.0}
+- equation: H + OH + M <=> H2O + M  # Reaction 15
+  type: three-body
+  rate-constant: {A: 2.2e+22, b: -2.0, Ea: 0.0}
+  efficiencies: {H2: 0.73, H2O: 3.65, AR: 0.38}
+- equation: H + HO2 <=> O + H2O  # Reaction 16
+  rate-constant: {A: 3.97e+12, b: 0.0, Ea: 671.0}

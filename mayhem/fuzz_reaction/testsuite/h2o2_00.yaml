@@ -1,0 +1,12 @@
+- equation: 2 O + M <=> O2 + M  # Reaction 1
+  type: three-body
+  rate-constant: {A: 1.2e+17, b: -1.0, Ea: 0.0}
+  efficiencies: {H2: 2.4, H2O: 15.4, AR: 0.83}
+- equation: O + H + M <=> OH + M  # Reaction 2
+  type: three-body
+  rate-constant: {A: 5.0e+17, b: -1.0, Ea: 0.0}
+  efficiencies: {H2: 2.0, H2O: 6.0, AR: 0.7}
+- equation: O + H2 <=> H + OH  # Reaction 3
+  rate-constant: {A: 3.87e+04, b: 2.7, Ea: 6260.0}
+- equation: O + HO2 <=> OH + O2  # Reaction 4
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}

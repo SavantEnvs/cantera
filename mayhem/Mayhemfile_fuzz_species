@@ -1,0 +1,9 @@
+project: savantenvs/cantera
+target: fuzz_species
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_species/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_species
+    libfuzzer: true
+    timeout: 30

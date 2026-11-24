@@ -1,0 +1,12 @@
+- equation: OH + H2O2 <=> HO2 + H2O  # Reaction 25
+  duplicate: true
+  rate-constant: {A: 2.0e+12, b: 0.0, Ea: 427.0}
+- equation: OH + H2O2 <=> HO2 + H2O  # Reaction 26
+  duplicate: true
+  rate-constant: {A: 1.7e+18, b: 0.0, Ea: 2.941e+04}
+- equation: 2 HO2 <=> O2 + H2O2  # Reaction 27
+  duplicate: true
+  rate-constant: {A: 1.3e+11, b: 0.0, Ea: -1630.0}
+- equation: 2 HO2 <=> O2 + H2O2  # Reaction 28
+  duplicate: true
+  rate-constant: {A: 4.2e+14, b: 0.0, Ea: 1.2e+04}

@@ -1,0 +1,4 @@
+state: {T: 300, P: 101325, Y: {H2: 0.1, O2: 0.9}}
+fuel: H2
+oxidizer: "O2:1"
+phi: 1.0

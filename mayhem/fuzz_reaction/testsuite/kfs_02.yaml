@@ -1,0 +1,22 @@
+- equation: H + HO2 (+ M) <=> H2 + O2 (+ M)  # Reaction 9
+  duplicate: true
+  type: falloff
+  high-P-rate-constant: {A: 4.0e+15, b: -0.5, Ea: 100.0 cal/mol}
+  low-P-rate-constant: {A: 7.0e+20, b: -1.0, Ea: 0.0 cal/mol}
+  efficiencies: {AR: 0.7, H2: 2.0, H2O: 6.0}
+  SRI: {A: 1.1, B: 700.0, C: 1234.0, D: 56.0, E: 0.7}
+- equation: H + HO2 (+ M) <=> H2 + O2 (+ M)  # Reaction 10
+  duplicate: true
+  type: falloff
+  high-P-rate-constant: {A: 4.0e+15, b: -0.5, Ea: 100.0 cal/mol}
+  low-P-rate-constant: {A: 7.0e+20, b: -1.0, Ea: 0.0 cal/mol}
+  efficiencies: {AR: 0.7, H2: 2.0, H2O: 6.0}
+  Tsang: {A: 0.95, B: -1.0e-04}
+- equation: H2O + OH (+M) <=> HO2 + H2 (+M)  # Reaction 11
+  units: {length: cm, quantity: mol}
+  type: chemically-activated
+  high-P-rate-constant: [5.88E-14, 6.721, -3022.227]
+  low-P-rate-constant: [282320.078, 1.46878, -3270.56495]
+- equation: O + H => O + H  # Reaction 12
+  type: two-temperature-plasma
+  rate-constant: {A: 17283, b: -3.1, Ea-gas: -5820 J/mol, Ea-electron: 1081 J/mol}

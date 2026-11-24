@@ -1,0 +1,7 @@
+m/s
+kJ/mol
+cm^3/mol/s
+kcal/mol
+H2:1.0, O2:0.5, AR:2
+eV
+1.25e-3

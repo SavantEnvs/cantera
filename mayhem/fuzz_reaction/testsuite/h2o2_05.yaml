@@ -1,0 +1,13 @@
+- equation: OH + H2 <=> H + H2O  # Reaction 21
+  rate-constant: {A: 2.16e+08, b: 1.51, Ea: 3430.0}
+- equation: 2 OH (+M) <=> H2O2 (+M)  # Reaction 22
+  type: falloff
+  low-P-rate-constant: {A: 2.3e+18, b: -0.9, Ea: -1700.0}
+  high-P-rate-constant: {A: 7.4e+13, b: -0.37, Ea: 0.0}
+  Troe: {A: 0.7346, T3: 94.0, T1: 1756.0, T2: 5182.0}
+  efficiencies: {H2: 2.0, H2O: 6.0, AR: 0.7}
+- equation: 2 OH <=> O + H2O  # Reaction 23
+  rate-constant: {A: 3.57e+04, b: 2.4, Ea: -2110.0}
+- equation: OH + HO2 <=> O2 + H2O  # Reaction 24
+  duplicate: true
+  rate-constant: {A: 1.45e+13, b: 0.0, Ea: -500.0}

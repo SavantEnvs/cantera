@@ -1,0 +1,20 @@
+- equation: O + H2 <=> H + OH  # Reaction 1
+  rate-constant: {A: 38.7, b: 2.7, Ea: 6260.0}
+- equation: 2 O + M <=> O2 + M  # Reaction 2
+  type: three-body
+  rate-constant: {A: 1.2e+11, b: -1.0, Ea: 0.0}
+  efficiencies: {AR: 0.83, H2: 2.4, H2O: 15.4}
+- equation: 2 OH (+ M) <=> H2O2 (+ M)  # Reaction 3
+  duplicate: true
+  type: falloff
+  low-P-rate-constant: {A: 2.3e+12, b: -0.9, Ea: -1700.0}
+  high-P-rate-constant: {A: 7.4e+10, b: -0.37, Ea: 0.0}
+  Troe: {A: 0.7346, T3: 94.0, T1: 1756.0, T2: 5182.0}
+  efficiencies: {AR: 0.7, H2: 2.0, H2O: 6.0}
+- equation: H2 + O2 <=> 2 OH  # Reaction 4
+  type: pressure-dependent-Arrhenius
+  rate-constants:
+  - {P: 0.01 atm, A: 1.2124e+16, b: -0.5779, Ea: 1.08727e+04}
+  - {P: 1.0 atm, A: 4.9108e+31, b: -4.8507, Ea: 2.47728e+04}
+  - {P: 10.0 atm, A: 1.2866e+47, b: -9.0246, Ea: 3.97965e+04}
+  - {P: 100.0 atm, A: 5.9632e+56, b: -11.529, Ea: 5.25996e+04}

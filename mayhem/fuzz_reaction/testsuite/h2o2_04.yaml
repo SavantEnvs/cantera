@@ -1,0 +1,8 @@
+- equation: H + HO2 <=> O2 + H2  # Reaction 17
+  rate-constant: {A: 4.48e+13, b: 0.0, Ea: 1068.0}
+- equation: H + HO2 <=> 2 OH  # Reaction 18
+  rate-constant: {A: 8.4e+13, b: 0.0, Ea: 635.0}
+- equation: H + H2O2 <=> HO2 + H2  # Reaction 19
+  rate-constant: {A: 1.21e+07, b: 2.0, Ea: 5200.0}
+- equation: H + H2O2 <=> OH + H2O  # Reaction 20
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 3600.0}
